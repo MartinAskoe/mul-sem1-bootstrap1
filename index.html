@@ -1,35 +1,64 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="da">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello, Bootstrap</title>
-    <meta name="description" content="Bootstrap Template">
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-
-    <!-- Scripts -->
-    <script src="js/vendor/bootstrap.bundle.min.js" defer></script>
-    <script src="js/script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Grid Øvelse</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body class="min-vh-100 overflow-y-scroll d-flex flex-column">
-    <header>
-        <!-- Your navigation could live here, or you can delete the header tag -->
-    </header>
+<body>
+<div class="container mt-4">
+    <h1 class="mb-4">Bootstrap Grid Øvelse</h1>
 
-    <main class="flex-grow-1">
-        <section class="container mt-4">
-            <h1>Bootstrap Template Vanilla</h1>
-            <p>
-                This is a template to getting started building a webapp using Bootstrap.
-            </p>
-        </section>
-    </main>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+        <div class="col"><div class="p-3 bg-primary-subtle">Celle 1</div></div>
+        <div class="col"><div class="p-3 bg-primary-subtle">Celle 2</div></div>
+        <div class="col"><div class="p-3 bg-primary-subtle">Celle 3</div></div>
+        <div class="col"><div class="p-3 bg-primary-subtle">Celle 4</div></div>
+        <div class="col"><div class="p-3 bg-primary-subtle">Celle 5</div></div>
+        <div class="col"><div class="p-3 bg-primary-subtle">Celle 6</div></div>
+        <div class="col"><div class="p-3 bg-primary-subtle">Celle 7</div></div>
+        <div class="col"><div class="p-3 bg-primary-subtle">Celle 8</div></div>
+        <div class="col"><div class="p-3 bg-primary-subtle">Celle 9</div></div>
+        <div class="col"><div class="p-3 bg-primary-subtle">Celle 10</div></div>
+        <div class="col"><div class="p-3 bg-primary-subtle">Celle 11</div></div>
+        <div class="col"><div class="p-3 bg-primary-subtle">Celle 12</div></div>
+    </div>
 
-    <footer class="text-center text-muted mt-4">
-        <p>&copy; 2024 Bootstrap Template Vanilla. All rights reserved.</p>
-    </footer>
+    <h2 class="mt-5 mb-4">Skakbræt</h2>
+
+    <div class="row g-0">
+        <div class="col-1-5"><div class="aspect-ratio-1x1 bg-dark"></div></div>
+        <div class="col-1-5"><div class="aspect-ratio-1x1 bg-light"></div></div>
+        <div class="col-1-5"><div class="aspect-ratio-1x1 bg-dark"></div></div>
+        <div class="col-1-5"><div class="aspect-ratio-1x1 bg-light"></div></div>
+        <div class="col-1-5"><div class="aspect-ratio-1x1 bg-dark"></div></div>
+        <div class="col-1-5"><div class="aspect-ratio-1x1 bg-light"></div></div>
+        <div class="col-1-5"><div class="aspect-ratio-1x1 bg-dark"></div></div>
+        <div class="col-1-5"><div class="aspect-ratio-1x1 bg-light"></div></div>
+    </div>
+    <div class="row g-0">
+        <div class="col-1-5"><div class="aspect-ratio-1x1 bg-light"></div></div>
+        <div class="col-1-5"><div class="aspect-ratio-1x1 bg-dark"></div></div>
+        <div class="col-1-5"><div class="aspect-ratio-1x1 bg-light"></div></div>
+        <div class="col-1-5"><div class="aspect-ratio-1x1 bg-dark"></div></div>
+        <div class="col-1-5"><div class="aspect-ratio-1x1 bg-light"></div></div>
+        <div class="col-1-5"><div class="aspect-ratio-1x1 bg-dark"></div></div>
+        <div class="col-1-5"><div class="aspect-ratio-1x1 bg-light"></div></div>
+        <div class="col-1-5"><div class="aspect-ratio-1x1 bg-dark"></div></div>
+    </div>
+
+</div>
+
+<style>
+    .col-1-5 {
+        width: 12.5%;
+    }
+    .aspect-ratio-1x1 {
+        padding-top: 100%;
+    }
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
